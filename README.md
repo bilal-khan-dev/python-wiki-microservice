@@ -1,3 +1,5 @@
+[![Python application test with Github Actions](https://github.com/bilal-khan-dev/python-wiki-microservice/actions/workflows/devops.yml/badge.svg)](https://github.com/bilal-khan-dev/python-wiki-microservice/actions/workflows/devops.yml)
+
 # python-wiki-microservice
 
 ## Project Scaffold
