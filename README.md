@@ -8,6 +8,5 @@
 2. Create empty files `Makefile`, `requirement.txt`, `main.py`, `Dockerfile`, `mylib/__init__.py`.
 3. Populate `Makefile`,
 4. Setup Continuous Integeration.
-5. Adding linting with `make lint`.
-6. Adding testing feature with `make test`.
-7. Adding formatting with `make format`.
+5. Adding linting with `make lint`, testing feature with `make test` and formatting with `make format`.
+6. Testing logic by building a cli using Python Fire Library `./cli-fire.py --help`.

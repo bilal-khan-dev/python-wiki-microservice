@@ -7,6 +7,7 @@ format:
 	black *.py mylib/*.py
 lint:
 	# pylint with disable warnings R=Recommneded and C=Configuration because it fails the build
+	# Its too much verbose for a build process
 	pylint --disable=R,C *.py mylib/*.py
 test:
 	# By default, pytest will not show test durations that are too small (<0.005s) unless -vv flag is passed.
