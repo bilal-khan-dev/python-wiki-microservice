@@ -1,3 +1,3 @@
-from mylib.logic import wiki, search_wiki
+from mylib.logic import wiki
 
 print(wiki())
