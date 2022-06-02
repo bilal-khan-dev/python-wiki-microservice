@@ -9,7 +9,8 @@ lint:
 	# pylint with disable warnings R=Recommneded and C=Configuration because it fails the build
 	pylint --disable=R,C *.py mylib/*.py
 test:
-	#test
+	# By default, pytest will not show test durations that are too small (<0.005s) unless -vv flag is passed.
+	python3 -m pytest -vv --cov=mylib test_logic.py
 build:
 	#build container
 deploy:
