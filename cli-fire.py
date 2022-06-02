@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import fire
-from mylib.logic import wiki
+from mylib import logic
 
 # This statement tells python interpreter tp only run this code if it runs as script
 if __name__ == "__main__":
-    fire.Fire(wiki)
+    fire.Fire(logic)
