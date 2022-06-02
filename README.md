@@ -8,3 +8,4 @@
 2. Create empty files `Makefile`, `requirement.txt`, `main.py`, `Dockerfile`, `mylib/__init__.py`.
 3. Populate `Makefile`,
 4. Setup Continuous Integeration.
+5. Adding testing feature with pytest.
