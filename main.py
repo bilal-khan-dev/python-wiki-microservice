@@ -25,12 +25,12 @@ async def wiki(name: str):
     }
 
 @app.get("/phrase/{phrase}")
-async def phrase(phrase: str):
+async def phrase(w_phrase: str):
     """
     Retrieve wikipedia page and returns phrases
     """
     return {
-        "result": wiki_phrases(phrase)
+        "result": wiki_phrases(w_phrase)
     }
 
 
