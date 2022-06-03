@@ -18,23 +18,9 @@ def test_wiki():
 
 
 def test_search_wiki():
-    response = client.get("/search/Harry_Potter")
+    response = client.get("/search/Harry Potter")
     assert response.status_code == 200
-    assert response.json() == {
-        "result": [
-            "Harry Potter",
-            "Harry Potter (film series)",
-            "Harry Potter and the Philosopher's Stone",
-            "Harry Potter and the Philosopher's Stone (film)",
-            "Harry Potter and the Cursed Child",
-            "Harry Potter and the Deathly Hallows – Part 2",
-            "Magical creatures in Harry Potter",
-            "Magic in Harry Potter",
-            "Harry Potter and the Half-Blood Prince (film)",
-            "Harry Potter and the Order of the Phoenix (film)",
-        ]
-    }
-
+    assert "Magic in Harry Potter" in response.json()["result"] 
 
 def test_phrase():
     response = client.get("/phrase/Barak Obama")
