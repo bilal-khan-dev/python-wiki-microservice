@@ -11,7 +11,7 @@ lint:
 	pylint --disable=R,C *.py mylib/*.py
 test:
 	# By default, pytest will not show test durations that are too small (<0.005s) unless -vv flag is passed.
-	python3 -m pytest -vv --cov=mylib test_logic.py
+	python3 -m pytest -vv --cov=mylib --cov=main test_*.py 
 build:
 	#build container
 deploy:
