@@ -10,3 +10,4 @@
 4. Setup Continuous Integeration.
 5. Adding linting with `make lint`, testing feature with `make test` and formatting with `make format`.
 6. Testing logic by building a cli using Python Fire Library `./cli-fire.py --help`.
+7. Containerize the microservice with docker `docker build .`

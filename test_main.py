@@ -11,15 +11,15 @@ def test_main():
     assert response.json() == {"message": "Wikipedia API. Call /search or /wiki"}
 
 
-# def test_phrase():
-#     response = client.get("/phrase/Barak Obama")
-#     assert response.status_code == 200
-#     assert response.json() == {
-#         "result": [
-#             "barack hussein obama ii",
-#             "bə-rahk hoo-sayn oh-bah-mə",
-#             "august",
-#             "american politician",
-#             "44th president",
-#         ]
-#     }
+def test_phrase():
+    response = client.get("/phrase/Barak Obama")
+    assert response.status_code == 200
+    assert response.json() == {
+        "result": [
+            "barack hussein obama ii",
+            "bə-rahk hoo-sayn oh-bah-mə",
+            "august",
+            "american politician",
+            "44th president",
+        ]
+    }
