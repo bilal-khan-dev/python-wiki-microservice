@@ -20,7 +20,8 @@ def test_wiki():
 def test_search_wiki():
     response = client.get("/search/Harry Potter")
     assert response.status_code == 200
-    assert "Magic in Harry Potter" in response.json()["result"] 
+    assert "Magic in Harry Potter" in response.json()["result"]
+
 
 def test_phrase():
     response = client.get("/phrase/Barak Obama")
